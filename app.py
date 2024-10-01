@@ -6,14 +6,14 @@ from flask_cors import CORS
 from uuid import uuid4
 
 app = Flask(__name__)
-CORS(app)
-cors = CORS(app, resource={
-    r"/*": {
-        "origins": "*"
-    }
-})
-
-app.config['CORS_HEADERS'] = 'Content-Type'
+# CORS(app)
+# cors = CORS(app, resource={
+#     r"/*": {
+#         "origins": "*"
+#     }
+# })
+#
+# app.config['CORS_HEADERS'] = 'Content-Type'
 
 
 def get_db_connection():
